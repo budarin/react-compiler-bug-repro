@@ -7,6 +7,8 @@ type AppContainerDeps = {
 
 export function createAppContainer({ showWelcomeNotification }: AppContainerDeps): FC {
   const AppContainer: FC = () => {
+
+    // 'use no memo';
     useEffect(() => {
       showWelcomeNotification();
     }, []);
